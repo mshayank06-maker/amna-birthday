@@ -10,10 +10,6 @@
 
   <style>
 
-    /* =========================
-       RESET
-    ========================= */
-
     * {
       margin: 0;
       padding: 0;
@@ -30,7 +26,6 @@
       color: white;
       overflow-x: hidden;
     }
-
 
     /* =========================
        BACKGROUND
@@ -60,11 +55,6 @@
         );
     }
 
-
-    /* =========================
-       FLOATING HEARTS
-    ========================= */
-
     .floating-hearts {
       position: fixed;
       inset: 0;
@@ -86,7 +76,6 @@
         transform:
           translateY(0)
           rotate(0deg);
-
         opacity: 0;
       }
 
@@ -98,10 +87,8 @@
         transform:
           translateY(-110vh)
           rotate(360deg);
-
         opacity: 0;
       }
-
     }
 
 
@@ -891,6 +878,7 @@
 
     }
 
+
     @media (max-width: 600px) {
 
       section {
@@ -921,7 +909,9 @@
 
 <body>
 
-  <!-- BACKGROUND -->
+  <!-- =========================
+       BACKGROUND
+  ========================= -->
 
   <div class="background"></div>
 
@@ -1067,8 +1057,8 @@
 
 <p class="section-subtitle">
 
-  Three moments, countless memories,
-  and a whole lot of love. ❤️
+  A few moments with you that I would
+  happily relive a thousand times. ❤️
 
 </p>
 
@@ -1101,7 +1091,7 @@
   <div class="photo-card">
 
     <img
-      src="IMG_4447.JPG"
+      src="IMG_4140.JPG"
       alt="Our memory"
     >
 
@@ -1121,7 +1111,7 @@
   <div class="photo-card">
 
     <img
-      src="IMG_4140.JPG"
+      src="IMG_4447.JPG"
       alt="Our memory"
     >
 
@@ -1142,7 +1132,7 @@
   </section>
 
   <!-- =========================
-       REASONS
+       REASONS I LOVE YOU
   ========================= -->
 
   <section>
@@ -1361,9 +1351,11 @@
   <br>
 
   <p>
+
     <strong>
       It's you, Amna. ❤️
     </strong>
+
   </p>
 
   <br>
@@ -1425,7 +1417,9 @@
 
   </section>
 
-  <!-- FOOTER -->
+  <!-- =========================
+       FOOTER
+  ========================= -->
 
   <footer>
     Made with ❤️ especially for Amna
@@ -1449,6 +1443,7 @@
       document.getElementById("typing");
 
     let index = 0;
+
 
     function typeText() {
 
@@ -1484,7 +1479,9 @@
       const heart =
         document.createElement("div");
 
-      heart.classList.add("heart");
+      heart.classList.add(
+        "heart"
+      );
 
       heart.innerHTML = "❤";
 
@@ -1494,11 +1491,15 @@
 
 
       heart.style.fontSize =
-        Math.random() * 25 + 15 + "px";
+        Math.random() * 25 +
+        15 +
+        "px";
 
 
       heart.style.animationDuration =
-        Math.random() * 8 + 6 + "s";
+        Math.random() * 8 +
+        6 +
+        "s";
 
 
       heartsContainer.appendChild(
@@ -1602,7 +1603,8 @@
 
 
         confetti.style.left =
-          Math.random() * 100 + "vw";
+          Math.random() * 100 +
+          "vw";
 
 
         confetti.style.fontSize =
@@ -1624,9 +1626,7 @@
 
         setTimeout(
           () => {
-
             confetti.remove();
-
           },
           7000
         );
